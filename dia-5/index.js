@@ -1,21 +1,18 @@
-let num1= parseInt(prompt('Digite o primerio número'))
-let num2 = parseInt(prompt('Digite o segundo número número'))
-let escolha = parseInt(prompt("Escolha a operação que deseja realizar:"
-  + "\n1 = +; \n2 = -; \n3 = *; \n4 = /;"))
+let valor
+let opcao = parseInt(prompt("Posto de gasolina" 
++ "\n1. Abastecer com gasolina (R$5/L) \n2. Abastecer com álcool (R$3/L) \n3. Calibar os pneus"))
 
 
-switch (escolha){
+switch(opcao){
     case 1:
-        console.log(num1 + ' + ' + num2 + ' = ' + (num1 + num2))
-        break;
+       valor = Number(prompt('Digite o valor: '))
+       console.log("Você abasteceu " + (valor / 5) + " litros de gasolina")
+       break;
     case 2:
-        console.log(num1 + ' - ' + num2 + ' = ' + (num1 - num2))
-        break;
-    case 3:
-        console.log(num1 + ' * ' + num2 + ' = ' + (num1 * num2))
+        valor = Number(prompt('Digite o valor: '))
+        console.log("Você abasteceu " + (valor / 3) + " litros de álcool")
         break;
     default:
-        console.log(num1 + ' / ' + num2 + ' = ' + (num1 / num2))
+        console.log("Pneus calibrados com sucesso!")    
         break;
-
 }
