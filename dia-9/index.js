@@ -21,7 +21,7 @@ console.log("Previsão de salário para os próximos 10 anos")
 
 let aumentoSalario = 0.015
 
-for (let ano = 1; ano <= 1; ano++){
+for (let ano = 1; ano <= 10; ano++){
     salarioAtual = salarioAtual + (salarioAtual*aumentoSalario)
     aumentoSalario = aumentoSalario * 2 
 
