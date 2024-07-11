@@ -1,4 +1,4 @@
-let nomeUsuario = prompt("Imforme seu nome: ")
+let nomeUsuario = prompt("Informe seu nome: ")
 let idadeUsuario = parseInt(prompt("Informe sua idade: "))
 let pesoUsuario = parseInt(prompt("Informe seu peso: "))
 let alturaUsuario = Number(prompt("Informe sua altura: "))
