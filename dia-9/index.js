@@ -19,17 +19,11 @@ console.log("Salário atual: R$ " + salarioAtual)
 
 console.log("Previsão de salário para os próximos 10 anos")
 
-let anoAtual = 2024
-let aumentoSalario = 0
-let porcSalario = 0.015
-aumentoSalario = salarioAtual * porcSalario
-salarioAtual = salarioAtual + aumentoSalario
+let aumentoSalario = 0.015
 
-for(let i = anoAtual+1; i <= anoAtual+10; i++ ){
-    console.log(i + " - " + salarioAtual)
-    porcSalario = porcSalario * 2
-    aumentoSalario = salarioAtual * porcSalario
-    salarioAtual = salarioAtual + aumentoSalario
+for (let ano = 1; ano <= 1; ano++){
+    salarioAtual = salarioAtual + (salarioAtual*aumentoSalario)
+    aumentoSalario = aumentoSalario * 2 
 
-
+    console.log((2024 + ano) + " = R$ " + salarioAtual)
 }
