@@ -1,20 +1,10 @@
-let array = [];
-let arrayInvertido = [];
-let qtd;
+let fibonacci = [];
+let num = parseInt(prompt("Digite um número inteiro posirtivo"));
+fibonacci[0] = num - 1
+fibonacci[1] = num
 
-qtd = parseInt(prompt("Quantos numeros deseja inserir?"));
-
-for(let i = 0; i < qtd; i++){
-    array[i]= parseInt(prompt("digite " + qtd + " números"));
+for(let i = 2; i < 10; i++){
+    fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2]
 }
 
-console.log(array);
-
-let contador = qtd - 1;
-
-for (let i = 0; i < qtd; i++){
-    arrayInvertido[i] = array[contador];
-    contador--;
-}
-
-console.log(arrayInvertido);
+console.log(fibonacci)
